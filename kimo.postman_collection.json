@@ -1,0 +1,590 @@
+{
+	"info": {
+		"_postman_id": "49c88999-c126-4b33-917c-57d7b6b46d27",
+		"name": "kimo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all available courses.",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/courses?sort=rating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "rating"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses?sort=rating",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "rating"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df6c5281fe4f8b0ceab89f1982ea4193\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2714b0c8-3cff-49c6-85fb-7b1452c5ba00"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.080460"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"645cc32c2dce8d5a05b9e213\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cc32c2dce8d5a05b9e213\"\n                },\n                \"name\": \"Highlights of Calculus\",\n                \"date\": \"2018-06-27T21:00:00.000+00:00\",\n                \"domain\": [\n                    \"mathematics\"\n                ],\n                \"description\": \"Highlights of Calculus is a series of short videos that introduces the basic ideas of calculus — how it works and why it is important. The intended audience is high school students, college students, or anyone who might need help understanding the subject.\\nIn addition to the videos, there are summary slides and practice problems complete with an audio narration by Professor Strang. You can find these resources to the right of each video.\",\n                \"created_at\": \"2023-05-11T10:27:56.275Z\",\n                \"aggregated_rating\": 0\n            }\n        },\n        {\n            \"id\": \"645cc32c2dce8d5a05b9e226\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cc32c2dce8d5a05b9e226\"\n                },\n                \"name\": \"Introduction to Programming\",\n                \"date\": \"2022-08-07T21:00:00.000+00:00\",\n                \"domain\": [\n                    \"programming\"\n                ],\n                \"description\": \"An introduction to programming using a language called Python. Learn how to read and write code as well as how to test and \\\"debug\\\" it. Designed for students with or without prior programming experience who'd like to learn Python specifically. Learn about functions, arguments, and return values (oh my!); variables and types; conditionals and Boolean expressions; and loops. Learn how to handle exceptions, find and fix bugs, and write unit tests; use third-party libraries; validate and extract data with regular expressions; model real-world entities with classes, objects, methods, and properties; and read and write files. Hands-on opportunities for lots of practice. Exercises inspired by real-world programming problems. No software required except for a web browser, or you can write code on your own PC or Mac.\",\n                \"created_at\": \"2023-05-11T10:27:56.299Z\",\n                \"aggregated_rating\": 0\n            }\n        },\n        {\n            \"id\": \"645cc32c2dce8d5a05b9e234\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cc32c2dce8d5a05b9e234\"\n                },\n                \"name\": \"Computer Vision Course\",\n                \"date\": \"2017-08-10T21:00:00.000+00:00\",\n                \"domain\": [\n                    \"computer vision\",\n                    \"artificial intelligence\"\n                ],\n                \"description\": \"Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka “deep learning”) approaches have greatly advanced the performance of these state-of-the-art visual recognition systems. This lecture collection is a deep dive into details of the deep learning architectures with a focus on learning end-to-end models for these tasks, particularly image classification. From this course, students will learn to implement, train and debug their own neural networks and gain a detailed understanding of cutting-edge research in computer vision.\\n\",\n                \"created_at\": \"2023-05-11T10:27:56.310Z\",\n                \"aggregated_rating\": 0\n            }\n        },\n        {\n            \"id\": \"645cc32c2dce8d5a05b9e246\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cc32c2dce8d5a05b9e246\"\n                },\n                \"name\": \"Introduction to Deep Learning\",\n                \"date\": \"2022-05-25T21:00:00.000+00:00\",\n                \"domain\": [\n                    \"artificial intelligence\"\n                ],\n                \"description\": \"Course lectures for MIT Introduction to Deep Learning.\",\n                \"created_at\": \"2023-05-11T10:27:56.326Z\",\n                \"aggregated_rating\": 0\n            }\n        },\n        {\n            \"id\": \"645cd7632dce8d7141e25822\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7632dce8d7141e25822\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T11:54:11.544+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T11:54:11.547Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7632dce8d7141e25823\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7632dce8d7141e25823\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T11:54:11.580+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T11:54:11.581Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7832dce8d7183a74931\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7832dce8d7183a74931\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T11:54:43.310+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T11:54:43.313Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7832dce8d7183a74932\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7832dce8d7183a74932\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T11:54:43.328+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T11:54:43.328Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7b52dce8d7224915c3b\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7b52dce8d7224915c3b\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T11:55:33.278+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T11:55:33.281Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7b52dce8d7224915c3c\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7b52dce8d7224915c3c\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T11:55:33.287+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T11:55:33.287Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7fd2dce8d72a7acaa99\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7fd2dce8d72a7acaa99\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T11:56:45.487+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T11:56:45.489Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd7fd2dce8d72a7acaa9a\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd7fd2dce8d72a7acaa9a\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T11:56:45.496+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T11:56:45.496Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd95b2dce8d74d0b6cfc3\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd95b2dce8d74d0b6cfc3\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:02:35.315+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:02:35.318Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd95b2dce8d74d0b6cfc4\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd95b2dce8d74d0b6cfc4\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:02:35.324+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:02:35.324Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd96c2dce8d75041cf2ef\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd96c2dce8d75041cf2ef\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:02:52.720+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:02:52.729Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd96c2dce8d75041cf2f0\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd96c2dce8d75041cf2f0\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:02:52.737+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:02:52.737Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd9822dce8d753d10f87d\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd9822dce8d753d10f87d\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:03:14.372+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:03:14.376Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd9822dce8d753d10f87e\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd9822dce8d753d10f87e\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:03:14.387+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:03:14.388Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd98e2dce8d756dc8436f\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd98e2dce8d756dc8436f\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:03:26.876+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:03:26.879Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cd98e2dce8d756dc84370\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cd98e2dce8d756dc84370\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:03:26.886+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:03:26.886Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cda182dce8d7696c3bf28\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cda182dce8d7696c3bf28\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:05:44.543+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:05:44.546Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cda182dce8d7696c3bf29\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cda182dce8d7696c3bf29\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:05:44.559+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:05:44.559Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cda232dce8d76c51fd26f\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cda232dce8d76c51fd26f\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:05:55.775+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:05:55.778Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cda232dce8d76c51fd270\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cda232dce8d76c51fd270\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:05:55.785+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:05:55.786Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdabc2dce8d77d274c3ac\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdabc2dce8d77d274c3ac\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:08:28.553+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:08:28.556Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdabc2dce8d77d274c3ad\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdabc2dce8d77d274c3ad\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:08:28.562+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:08:28.562Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdac42dce8d78008e391d\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdac42dce8d78008e391d\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:08:36.559+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:08:36.562Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdac42dce8d78008e391e\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdac42dce8d78008e391e\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:08:36.568+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:08:36.568Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdadb2dce8d783c3e9915\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdadb2dce8d783c3e9915\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:08:59.910+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:08:59.913Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdadb2dce8d783c3e9916\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdadb2dce8d783c3e9916\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:08:59.919+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:08:59.920Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdae22dce8d7882dfc84d\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdae22dce8d7882dfc84d\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:09:06.094+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:09:06.103Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdae22dce8d7882dfc84e\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdae22dce8d7882dfc84e\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:09:06.109+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:09:06.109Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb012dce8d78c531ace5\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb012dce8d78c531ace5\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:09:37.575+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:09:37.578Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb012dce8d78c531ace6\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb012dce8d78c531ace6\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:09:37.585+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:09:37.585Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb082dce8d790c74c7b4\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb082dce8d790c74c7b4\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:09:44.018+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:09:44.020Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb082dce8d790c74c7b5\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb082dce8d790c74c7b5\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:09:44.025+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:09:44.025Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb152dce8d793dade1cc\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb152dce8d793dade1cc\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:09:57.416+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:09:57.419Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb152dce8d793dade1cd\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb152dce8d793dade1cd\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:09:57.426+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:09:57.426Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb432dce8d799a13fec5\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb432dce8d799a13fec5\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:10:43.820+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:10:43.823Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb432dce8d799a13fec6\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb432dce8d799a13fec6\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:10:43.830+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:10:43.830Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb552dce8d79d2fc600c\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb552dce8d79d2fc600c\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:11:01.886+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:11:01.889Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb552dce8d79d2fc600d\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb552dce8d79d2fc600d\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:11:01.896+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:11:01.896Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb5c2dce8d7a1ac37c2c\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb5c2dce8d7a1ac37c2c\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:11:08.257+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:11:08.260Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb5c2dce8d7a1ac37c2d\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb5c2dce8d7a1ac37c2d\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:11:08.265+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:11:08.265Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb602dce8d7a3f74974e\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb602dce8d7a3f74974e\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:11:12.122+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:11:12.125Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdb602dce8d7a3f74974f\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdb602dce8d7a3f74974f\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:11:12.130+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:11:12.130Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdbff2dce8d7b810c0313\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdbff2dce8d7b810c0313\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:13:51.386+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:13:51.395Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdbff2dce8d7b810c0314\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdbff2dce8d7b810c0314\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:13:51.425+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:13:51.425Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdc292dce8d7bce061ae6\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdc292dce8d7bce061ae6\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:14:33.294+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:14:33.296Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdc292dce8d7bce061ae7\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdc292dce8d7bce061ae7\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:14:33.302+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:14:33.302Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdc422dce8d7c0dce4751\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdc422dce8d7c0dce4751\"\n                },\n                \"name\": \"Course A\",\n                \"date\": \"2023-05-10T12:14:58.372+00:00\",\n                \"domain\": [\n                    \"domain1\"\n                ],\n                \"description\": \"description1\",\n                \"created_at\": \"2023-05-11T12:14:58.375Z\",\n                \"aggregated_rating\": 1\n            }\n        },\n        {\n            \"id\": \"645cdc422dce8d7c0dce4752\",\n            \"type\": \"course\",\n            \"attributes\": {\n                \"id\": {\n                    \"$oid\": \"645cdc422dce8d7c0dce4752\"\n                },\n                \"name\": \"Course B\",\n                \"date\": \"2023-05-09T12:14:58.388+00:00\",\n                \"domain\": [\n                    \"domain2\"\n                ],\n                \"description\": \"description2\",\n                \"created_at\": \"2023-05-11T12:14:58.388Z\",\n                \"aggregated_rating\": 1\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "course overview",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/courses/645cb36a2dce8d441264e801",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"645cb36a2dce8d441264e801"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses/645cb36a2dce8d441264e801",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"645cb36a2dce8d441264e801"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a2d17744405da6751ee39fb700c891a7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "a2d57ed4-e27b-4bf3-92c6-8b18d7cc08bc"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.038325"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"645cb36a2dce8d441264e801\",\n        \"type\": \"course\",\n        \"attributes\": {\n            \"id\": {\n                \"$oid\": \"645cb36a2dce8d441264e801\"\n            },\n            \"name\": \"Highlights of Calculus\",\n            \"date\": \"2018-06-27T21:00:00.000+00:00\",\n            \"domain\": [\n                \"mathematics\"\n            ],\n            \"description\": \"Highlights of Calculus is a series of short videos that introduces the basic ideas of calculus — how it works and why it is important. The intended audience is high school students, college students, or anyone who might need help understanding the subject.\\nIn addition to the videos, there are summary slides and practice problems complete with an audio narration by Professor Strang. You can find these resources to the right of each video.\",\n            \"chapters\": [\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e802\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.930Z\",\n                    \"name\": \"Gil Strang's Introduction to Calculus for Highlights for High School\",\n                    \"ratings\": [\n                        2,\n                        2,\n                        2,\n                        2,\n                        2,\n                        2,\n                        2,\n                        2,\n                        12\n                    ],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T10:17:29.375Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e803\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.937Z\",\n                    \"name\": \"Big Picture of Calculus\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.937Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e804\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.939Z\",\n                    \"name\": \"Big Picture: Derivatives\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.939Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e805\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.940Z\",\n                    \"name\": \"Max and Min and Second Derivative\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.940Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e806\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.941Z\",\n                    \"name\": \"The Exponential Function\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.941Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e807\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.942Z\",\n                    \"name\": \"Big Picture: Integrals\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.942Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e808\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.943Z\",\n                    \"name\": \"Derivative of sin x and cos x\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.943Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e809\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.945Z\",\n                    \"name\": \"Product Rule and Quotient Rule\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.945Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e80a\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.946Z\",\n                    \"name\": \"Chains f(g(x)) and the Chain Rule\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.946Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e80b\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.947Z\",\n                    \"name\": \"Limits and Continuous Functions\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.947Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e80c\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.948Z\",\n                    \"name\": \"Inverse Functions f ^-1 (y) and the Logarithm x = ln y\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.948Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e80d\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.949Z\",\n                    \"name\": \"Derivatives of ln y and sin ^-1 (y)\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.949Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e80e\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.950Z\",\n                    \"name\": \"Growth Rate and Log Graphs\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.950Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e80f\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.951Z\",\n                    \"name\": \"Linear Approximation/Newton's Method\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.951Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e810\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.952Z\",\n                    \"name\": \"Power Series/Euler's Great Formula\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.952Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e811\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.953Z\",\n                    \"name\": \"Differential Equations of Motion\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.953Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e812\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.954Z\",\n                    \"name\": \"Differential Equations of Growth\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.954Z\"\n                },\n                {\n                    \"_id\": {\n                        \"$oid\": \"645cb36a2dce8d441264e813\"\n                    },\n                    \"created_at\": \"2023-05-11T09:20:42.955Z\",\n                    \"name\": \"Six Functions, Six Rules, and Six Theorems\",\n                    \"ratings\": [],\n                    \"text\": \"Highlights of Calculus\",\n                    \"updated_at\": \"2023-05-11T09:20:42.955Z\"\n                }\n            ],\n            \"created_at\": \"2023-05-11T09:20:42.901Z\",\n            \"aggregated_rating\": 3\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "chapter info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/courses/645cb36a2dce8d441264e801",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"645cb36a2dce8d441264e801"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "chapter info response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses/645cc32c2dce8d5a05b9e213/chapter/645cc32c2dce8d5a05b9e214",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"645cc32c2dce8d5a05b9e213",
+								"chapter",
+								"645cc32c2dce8d5a05b9e214"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e652bd558377fd519631d9930b4e2026\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1c978eae-ee8b-4123-a276-52ba591ca530"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.082420"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"645cc32c2dce8d5a05b9e214\",\n        \"type\": \"chapter\",\n        \"attributes\": {\n            \"name\": \"Gil Strang's Introduction to Calculus for Highlights for High School\",\n            \"text\": \"Highlights of Calculus\",\n            \"id\": {\n                \"$oid\": \"645cc32c2dce8d5a05b9e214\"\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "rate chapter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rating\": 12\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/courses/645cb36a2dce8d441264e801/chapter/645cb36a2dce8d441264e802/rate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"courses",
+						"645cb36a2dce8d441264e801",
+						"chapter",
+						"645cb36a2dce8d441264e802",
+						"rate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "error response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": 12\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses/645cb36a2dce8d441264e801/chapter/645cb36a2dce8d441264e802/rate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"645cb36a2dce8d441264e801",
+								"chapter",
+								"645cb36a2dce8d441264e802",
+								"rate"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2057e61d-9668-464d-be93-52a0c10b21de"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.090566"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Rating not recorded. Rating should be between 1 and 10\",\n    \"rating\": 12\n}"
+				},
+				{
+					"name": "success response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses/645cb36a2dce8d441264e801/chapter/645cb36a2dce8d441264e802/rate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"645cb36a2dce8d441264e801",
+								"chapter",
+								"645cb36a2dce8d441264e802",
+								"rate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ae0fdd506520193be86dd36714145d7d\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7c6323d7-4cf4-4494-9954-c283b533ada6"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.063151"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Chapter rated successfully\",\n    \"rating\": 3\n}"
+				}
+			]
+		}
+	]
+}
