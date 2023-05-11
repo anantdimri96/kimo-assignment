@@ -5,20 +5,23 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - ruby '2.7.3'
 
-* System dependencies
+* System dependencies added in gemfile
 
-* Configuration
-
-* Database creation
-
-* Database initialization
+* Database creation - mongo db
 
 * How to run the test suite
+`bundle exex rspec .`
 
-* Services (job queues, cache servers, search engines, etc.)
+Containerization: added docker and docker-compose
+This project used FastApi and serializers are in place.
 
-* Deployment instructions
+Endpoints:
 
-* ...
+Chapter info -> `/courses/:id/chapter/:chapter_title`                                                    
+Rate chapter -> `/courses/:id/chapter/:chapter_title/rate`                                                
+Courses overview(with sorting options) -> `/courses`                                                                               
+Course overview -> `/courses/:id`
+
+All the working endpoints collections are added in the repo itself with working samples with the name kimo.postman_collection.json
